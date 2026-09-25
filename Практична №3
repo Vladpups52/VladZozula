@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Розклад руху автобусів</title>
+</head>
+
+<body>
+
+<h1>Розклад руху автобусів</h1>
+
+<table border="1" cellpadding="10" cellspacing="0">
+
+    <thead>
+        <tr>
+            <th colspan="5">Розклад руху автобусів</th>
+        </tr>
+
+        <tr>
+            <th>Номер маршруту</th>
+            <th>Місце відправлення</th>
+            <th>Місце прибуття</th>
+            <th colspan="2">Час</th>
+        </tr>
+
+        <tr>
+            <th>№</th>
+            <th>Звідки</th>
+            <th>Куди</th>
+            <th>Відправлення</th>
+            <th>Прибуття</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr>
+            <td>101</td>
+            <td>Львів</td>
+            <td>Тернопіль</td>
+            <td>10:00</td>
+            <td>11:00</td>
+        </tr>
+
+
+        <tr>
+            <td>201</td>
+            <td>Київ</td>
+            <td>Житомир</td>
+            <td>08:00</td>
+            <td>09:30</td>
+        </tr>
+
+        <tr>
+            <td>202</td>
+            <td>Рівне</td>
+            <td>Львів</td>
+            <td>09:00</td>
+            <td>11:30</td>
+        </tr>
+
+        <tr>
+            <td>203</td>
+            <td>Одеса</td>
+            <td>Миколаїв</td>
+            <td>12:00</td>
+            <td>14:00</td>
+        </tr>
+
+        <tr>
+            <td>204</td>
+            <td>Івано-Франківськ</td>
+            <td>Чернівці</td>
+            <td>14:00</td>
+            <td>16:00</td>
+        </tr>
+
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td colspan="5"><b>Всього рейсів: 5</b></td>
+        </tr>
+    </tfoot>
+
+</table>
+
+</body>
+</html>
