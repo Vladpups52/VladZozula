@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1 id="main-title">Daily News</h1>
+    <p>Свіжі новини щодня</p>
+</header>
+
+<nav>
+    <a href="#home">Головна</a>
+    <a href="#technology">Технології</a>
+    <a href="#sport">Спорт</a>
+</nav>
+
+<main id="home">
+    <h2>Останні новини</h2>
+
+    <section class="news-container">
+
+        <article class="card">
+            <h2>Нові технології змінюють наше життя</h2>
+            <p>Сучасні технології допомагають людям швидше навчатися, працювати та спілкуватися.</p>
+            <p class="date">Дата публікації: 30 вересня 2026 року</p>
+        </article>
+
+        <article class="card">
+            <h2>Українські спортсмени готуються до змагань</h2>
+            <p>Спортсмени продовжують тренування та готуються до важливих міжнародних змагань.</p>
+            <p class="date">Дата публікації: 30 вересня 2026 року</p>
+        </article>
+
+        <article class="card">
+            <h2>Освіта стає більш цифровою</h2>
+            <p>Онлайн-ресурси та цифрові інструменти допомагають учням отримувати нові знання.</p>
+            <p class="important">Важливо: перевіряйте інформацію в надійних джерелах.</p>
+            <p class="date">Дата публікації: 30 вересня 2026 року</p>
+        </article>
+
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Daily News</p>
+</footer>
+
+</body>
+
+
