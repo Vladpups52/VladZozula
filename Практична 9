@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>МандриСвіт</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">МандриСвіт</div>
+      <nav class="nav-menu">
+        <a href="#destinations">Напрямки</a>
+        <a href="#about">Переваги</a>
+        <a href="#contact">Контакти</a>
+      </nav>
+    </div>
+
+    <div class="container hero">
+      <h1 class="hero-title">Відкрий найкращі куточки світу разом з нами</h1>
+      <p class="hero-subtitle">
+        Авторські маршрути, комфортні перельоти та незабутні подорожі для всієї родини.
+      </p>
+      <a href="#destinations" class="btn btn-primary">Обрати подорож</a>
+    </div>
+  </header>
+
+  <main id="destinations" class="destinations-section">
+    <div class="container">
+      <h2 class="section-title">Туристичні напрямки</h2>
+
+      <div class="cards-grid">
+        <article class="card">
+          <img
+            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80"
+            alt="Мальдіви"
+            class="card-img"
+          >
+          <div class="card-body">
+            <h3 class="card-title">Мальдіви</h3>
+            <p class="card-desc">
+              7 ночей на білосніжному узбережжі, снорклінг серед коралових рифів та вечері на заході сонця.
+            </p>
+            <a href="#" class="btn btn-card">Детальніше</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80"
+            alt="Швейцарські Альпи"
+            class="card-img"
+          >
+          <div class="card-body">
+            <h3 class="card-title">Швейцарські Альпи</h3>
+            <p class="card-desc">
+              Панорамні поїзди, альпійські луки, кришталеві озера та трекінг свіжим гірським повітрям.
+            </p>
+            <a href="#" class="btn btn-card">Детальніше</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=80"
+            alt="Кіото та Токіо"
+            class="card-img"
+          >
+          <div class="card-body">
+            <h3 class="card-title">Кіото та Токіо</h3>
+            <p class="card-desc">
+              Поєднання стародавніх храмів, чайних церемоній, неонових мегаполісів і вишуканої кухні.
+            </p>
+            <a href="#" class="btn btn-card">Детальніше</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=900&q=80"
+            alt="Санторіні"
+            class="card-img"
+          >
+          <div class="card-body">
+            <h3 class="card-title">Санторіні</h3>
+            <p class="card-desc">
+              Середземноморський бриз, затишні тераси над Егейським морем, прогулянки вузькими вуличками та виноробні.
+            </p>
+            <a href="#" class="btn btn-card">Детальніше</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=900&q=80"
+            alt="Доломітові Альпи"
+            class="card-img"
+          >
+          <div class="card-body">
+            <h3 class="card-title">Доломітові Альпи</h3>
+            <p class="card-desc">
+              Величні скельні масиви, смарагдові озера, затишні шале та справжня італійська гостинність.
+            </p>
+            <a href="#" class="btn btn-card">Детальніше</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80"
+            alt="Ісландія"
+            class="card-img"
+          >
+          <div class="card-body">
+            <h3 class="card-title">Ісландія</h3>
+            <p class="card-desc">
+              Гейзери, водоспади, чорні пляжі, термальні джерела та полювання на північне сяйво.
+            </p>
+            <a href="#" class="btn btn-card">Детальніше</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <section id="about" class="benefits-section">
+    <div class="container">
+      <h2 class="section-title">Наші переваги</h2>
+      <div class="benefits-flex">
+        <div class="benefit-item">
+          <h3>Підтримка 24/7</h3>
+          <p>Супроводжуємо вас на кожному етапі подорожі від бронювання до повернення додому.</p>
+        </div>
+        <div class="benefit-item">
+          <h3>Перевірені маршрути</h3>
+          <p>Кожну локацію та готель ми ретельно відбираємо за якістю сервісу.</p>
+        </div>
+        <div class="benefit-item">
+          <h3>Гнучке планування</h3>
+          <p>Адаптуємо програму під ваш темп, бюджет і побажання.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" class="site-footer">
+    <div class="container footer-inner">
+      <p>МандриСвіт</p>
+      <p>info@mandrysvit.example | +38 (044) 555-01-99</p>
+    </div>
+  </footer>
+</body>
+</html>
