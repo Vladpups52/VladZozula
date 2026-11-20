@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рекламний банер</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="banner">
+
+        <div class="content">
+            <h1>Твій стиль — твої правила!</h1>
+
+            <p>
+                Відкрий для себе нові можливості.
+                Обирай якість, комфорт і сучасний дизайн!
+            </p>
+
+            <button>Дізнатися більше</button>
+        </div>
+
+        <div class="sale">-30%</div>
+
+        <div class="circle"></div>
+
+    </div>
+
+</body>
+</html>
