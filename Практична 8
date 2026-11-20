@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Restaurant</title>
+
+    <style>
+        /* CSS-змінні */
+        :root {
+            --main-color: #b85c38;
+            --second-color: #f5e6d3;
+            --text-color: #333;
+            --white: #ffffff;
+            --spacing: 20px;
+            --radius: 15px;
+        }
+
+        /* Загальні стилі */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: var(--second-color);
+            color: var(--text-color);
+        }
+
+        /* Шапка сайту */
+        .header {
+            background: var(--main-color);
+            color: var(--white);
+            padding: 25px;
+            text-align: center;
+        }
+
+        .header__title {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .header__menu {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .header__link {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .header__link:hover {
+            color: #ffe0a8;
+        }
+
+        /* Про ресторан */
+        .about {
+            text-align: center;
+            padding: 40px var(--spacing);
+        }
+
+        .about__title {
+            color: var(--main-color);
+            margin-bottom: 15px;
+        }
+
+        .about__text {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Меню ресторану */
+        .menu {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .menu__title {
+            font-size: 30px;
+            color: var(--main-color);
+            margin-bottom: 25px;
+        }
+
+        .menu__list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--spacing);
+        }
+
+        /* Спільний клас карток */
+        .card {
+            background: var(--white);
+            padding: var(--spacing);
+            border-radius: var(--radius);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+        }
+
+        /* Картки страв за BEM */
+        .menu__card {
+            text-align: center;
+        }
+
+        .menu__image {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: var(--radius);
+            margin-bottom: 15px;
+        }
+
+        .menu__name {
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        .menu__description {
+            margin-bottom: 15px;
+            color: #666;
+        }
+
+        .menu__price {
+            color: var(--main-color);
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        /* Спільний стиль кнопок */
+        .button {
+            display: inline-block;
+            background: var(--main-color);
+            color: var(--white);
+            padding: 12px 22px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #813c25;
+            transform: scale(1.05);
+        }
+
+        /* Підвал */
+        .footer {
+            background: var(--main-color);
+            color: var(--white);
+            text-align: center;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        /* Планшети */
+        @media (max-width: 900px) {
+            .menu__list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Смартфони */
+        @media (max-width: 600px) {
+            .menu__list {
+                grid-template-columns: 1fr;
+            }
+
+            .header__menu {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .header__title {
+                font-size: 25px;
+            }
+
+            .about__text {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Шапка сайту -->
+    <header class="header">
+        <h1 class="header__title">Tasty Restaurant</h1>
+
+        <nav>
+            <ul class="header__menu">
+                <li><a class="header__link" href="#home">Головна</a></li>
+                <li><a class="header__link" href="#about">Про нас</a></li>
+                <li><a class="header__link" href="#menu">Меню</a></li>
+                <li><a class="header__link" href="#contacts">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Блок про ресторан -->
+    <section class="about" id="about">
+        <h2 class="about__title">Ласкаво просимо до нашого ресторану!</h2>
+
+        <p class="about__text">
+            Tasty Restaurant — це місце, де ви можете насолодитися
+            смачними стравами, приємною атмосферою та якісним обслуговуванням.
+            Ми готуємо з любов'ю для кожного гостя!
+        </p>
+    </section>
+
+    <!-- Меню страв -->
+    <main class="menu" id="menu">
+
+        <h2 class="menu__title">Наше меню</h2>
+
+        <div class="menu__list">
+
+            <!-- Перша страва -->
+            <article class="card menu__card">
+                <img class="menu__image"
+                     src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500"
+                     alt="Піца">
+
+                <h3 class="menu__name">Піца</h3>
+                <p class="menu__description">
+                    Смачна піца з сиром та овочами.
+                </p>
+                <p class="menu__price">180 грн</p>
+                <a href="#contacts" class="button">Замовити</a>
+            </article>
+
+            <!-- Друга страва -->
+            <article class="card menu__card">
+                <img class="menu__image"
+                     src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500"
+                     alt="Бургер">
+
+                <h3 class="menu__name">Бургер</h3>
+                <p class="menu__description">
+                    Соковита котлета, сир та свіжі овочі.
+                </p>
+                <p class="menu__price">150 грн</p>
+                <a href="#contacts" class="button">Замовити</a>
+            </article>
+
+            <!-- Третя страва -->
+            <article class="card menu__card">
+                <img class="menu__image"
+                     src="https://images.unsplash.com/photo-1547592180-85f173990554?w=500"
+                     alt="Салат">
+
+                <h3 class="menu__name">Салат</h3>
+                <p class="menu__description">
+                    Свіжі овочі та смачний соус.
+                </p>
+                <p class="menu__price">120 грн</p>
+                <a href="#contacts" class="button">Замовити</a>
+            </article>
+
+            <!-- Четверта страва -->
+            <article class="card menu__card">
+                <img class="menu__image"
+                     src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=500"
+                     alt="Паста">
+
+                <h3 class="menu__name">Паста</h3>
+                <p class="menu__description">
+                    Італійська паста з вершковим соусом.
+                </p>
+                <p class="menu__price">170 грн</p>
+                <a href="#contacts" class="button">Замовити</a>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- Контакти -->
+    <footer class="footer" id="contacts">
+        <h2>Контакти</h2>
+        <p>Телефон: +380 00 123 45 67</p>
+        <p>Адреса: м. Київ</p>
+        <p>© 2026 Tasty Restaurant</p>
+    </footer>
+
+</body>
+</html>
