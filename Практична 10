@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon Travel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-layout">
+        <header class="header">
+            <div class="logo">Horizon Travel</div>
+            <nav class="nav">
+                <a href="#">Головна</a>
+                <a href="#">Тури</a>
+                <a href="#">Акції</a>
+                <a href="#">Контакти</a>
+            </nav>
+        </header>
+
+        <section class="banner">
+            <div class="banner-content">
+                <h1>Відкрий світ разом із нами!</h1>
+                <p>Знижки до 30% на раннє бронювання літніх турів.</p>
+                <a href="#tours" class="btn">Обрати тур</a>
+            </div>
+        </section>
+
+        <main class="main" id="tours">
+            <h2>Туристичні напрямки</h2>
+            <div class="tours-grid">
+                <article class="card card-wide">
+                    <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=800&q=80" alt="Мальдіви">
+                    <div class="card-body">
+                        <span class="badge">Хіт сезону</span>
+                        <h3>Мальдіви</h3>
+                        <p>Білосніжні пляжі, бунгало над водою та відпочинок все включено.</p>
+                        <div class="price">від 45 000 грн</div>
+                    </div>
+                </article>
+
+                <article class="card card-tall">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=600&q=80" alt="Париж">
+                    <div class="card-body">
+                        <h3>Париж</h3>
+                        <p>Екскурсії, прогулянки вздовж Сени та затишні вулички Монмартру.</p>
+                        <div class="price">від 18 500 грн</div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=600&q=80" alt="Санторіні">
+                    <div class="card-body">
+                        <h3>Санторіні, Греція</h3>
+                        <p>Мальовничі заходи сонця та відпочинок біля Егейського моря.</p>
+                        <div class="price">від 22 000 грн</div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=600&q=80" alt="Таїланд">
+                    <div class="card-body">
+                        <h3>Таїланд</h3>
+                        <p>Тропічні острови Пхукет та стародавні храми Бангкока.</p>
+                        <div class="price">від 34 000 грн</div>
+                    </div>
+                </article>
+
+                <article class="card card-wide">
+                    <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=800&q=80" alt="Італія">
+                    <div class="card-body">
+                        <span class="badge">Популярний тур</span>
+                        <h3>Італія: Рим, Флоренція, Венеція</h3>
+                        <p>Подорож історичними містами з дегустацією місцевої кухні.</p>
+                        <div class="price">від 24 900 грн</div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=600&q=80" alt="Барселона">
+                    <div class="card-body">
+                        <h3>Барселона, Іспанія</h3>
+                        <p>Архітектура, тепле узбережжя та середземноморська атмосфера.</p>
+                        <div class="price">від 21 300 грн</div>
+                    </div>
+                </article>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 Horizon Travel</p>
+        </footer>
+    </div>
+</body>
+</html>
