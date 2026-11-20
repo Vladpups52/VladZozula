@@ -1,0 +1,90 @@
+"use strict";
+
+// Завдання 1. Підключення JavaScript
+console.log("JavaScript успішно підключено!");
+
+// Завдання 2. Створення змінних різних типів
+const firstName = "Олександр";
+let age = 19;
+let gpa = 91.5;
+const isStudent = true;
+
+let undefinedVar;
+const nullVar = null;
+const bigIntVar = 900719925474099312345n;
+const symbolVar = Symbol("id");
+
+console.log(firstName, typeof firstName);
+console.log(age, typeof age);
+console.log(gpa, typeof gpa);
+console.log(isStudent, typeof isStudent);
+console.log(undefinedVar, typeof undefinedVar);
+console.log(nullVar, typeof nullVar);
+console.log(bigIntVar, typeof bigIntVar);
+console.log(symbolVar, typeof symbolVar);
+
+// Завдання 3. Перетворення типів даних
+const c1 = "125";
+const r1 = Number(c1);
+console.log(c1, typeof c1, "->", r1, typeof r1);
+
+const c2 = "15.75";
+const r2 = Number(c2);
+console.log(c2, typeof c2, "->", r2, typeof r2);
+
+const c3 = 250;
+const r3 = String(c3);
+console.log(c3, typeof c3, "->", r3, typeof r3);
+
+const c4 = true;
+const r4 = String(c4);
+console.log(c4, typeof c4, "->", r4, typeof r4);
+
+const c5 = "false";
+const r5 = Boolean(c5);
+console.log(c5, typeof c5, "->", r5, typeof r5);
+
+const c6 = 0;
+const r6 = Boolean(c6);
+console.log(c6, typeof c6, "->", r6, typeof r6);
+
+const c7 = 1;
+const r7 = Boolean(c7);
+console.log(c7, typeof c7, "->", r7, typeof r7);
+
+const c8 = null;
+const r8 = Number(c8);
+console.log(c8, typeof c8, "->", r8, typeof r8);
+
+const c9 = "45px";
+const r9 = Number(c9);
+console.log(c9, typeof c9, "->", r9, typeof r9);
+
+const c10 = "12.5kg";
+const r10 = Number(c10);
+console.log(c10, typeof c10, "->", r10, typeof r10);
+
+// Завдання 4. Арифметичні операції
+const a = "25";
+const b = "5";
+
+const numA = Number(a);
+const numB = Number(b);
+
+console.log("Сума:", numA + numB);
+console.log("Різниця:", numA - numB);
+console.log("Добуток:", numA * numB);
+
+const rawSum = a + b;
+console.log('"25" + "5":', rawSum);
+console.log('Оператор "+" об\'єднує рядки у текст ("255"), а не додає числові значення.');
+
+// Завдання 5. Дослідження перетворення типів
+console.log('Очікувано: NaN | Факт:', Number("hello"));
+console.log('Очікувано: 0 | Факт:', Number(""));
+console.log('Очікувано: true | Факт:', Boolean("0"));
+console.log('Очікувано: false | Факт:', Boolean(""));
+console.log('Очікувано: "null" | Факт:', String(null));
+console.log('Очікувано: "105" | Факт:', "10" + 5);
+console.log('Очікувано: 5 | Факт:', "10" - 5);
+console.log('Очікувано: "object" | Факт:', typeof null);
