@@ -1,0 +1,160 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background: #eeeeff;
+font-family: Arial, sans-serif;
+}
+
+/* Основний банер */
+.banner {
+position: relative;
+width: 600px;
+min-height: 350px;
+overflow: hidden;
+border-radius: 25px;
+background: linear-gradient(135deg, #5428a8, #167bd1);
+color: white;
+text-align: center;
+padding: 60px 30px;
+
+transition: 0.5s;
+animation: appear 1s ease;
+}
+
+/* Ефект наведення на банер */
+.banner:hover {
+transform: rotate(-2deg) scale(1.03);
+background: linear-gradient(135deg, #e84393, #6c42cf);
+}
+
+/* Заголовок */
+h1 {
+font-size: 48px;
+margin-bottom: 20px;
+
+animation: titleMove 1.2s ease;
+}
+
+/* Опис */
+p {
+font-size: 18px;
+line-height: 1.5;
+margin-bottom: 30px;
+}
+
+/* Кнопка */
+button {
+padding: 15px 30px;
+border: none;
+border-radius: 30px;
+background: #ffcc00;
+color: #222;
+font-size: 17px;
+font-weight: bold;
+cursor: pointer;
+
+transition: 0.4s;
+}
+
+button:hover {
+background: #ff5722;
+color: white;
+transform: scale(1.2);
+}
+
+/* Декоративний елемент */
+.decoration {
+position: absolute;
+width: 90px;
+height: 90px;
+border: 10px solid rgba(255,255,255,0.4);
+border-radius: 50%;
+top: 20px;
+left: 20px;
+
+animation: move 4s ease-in-out infinite alternate;
+}
+
+/* Значок знижки */
+.sale {
+position: absolute;
+right: 25px;
+bottom: 20px;
+background: #ffcc00;
+color: #222;
+font-size: 24px;
+font-weight: bold;
+padding: 15px;
+border-radius: 50%;
+
+animation: pulse 1.5s infinite;
+}
+
+/* Поява банера */
+@keyframes appear {
+from {
+opacity: 0;
+transform: translateY(100px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+/* Поява заголовка зверху */
+@keyframes titleMove {
+from {
+opacity: 0;
+transform: translateY(-80px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+/* Рух декоративного елемента */
+@keyframes move {
+from {
+transform: translateX(0) rotate(0deg);
+}
+to {
+transform: translateX(450px) rotate(360deg);
+}
+}
+
+/* Пульсація знижки */
+@keyframes pulse {
+0%, 100% {
+transform: scale(1);
+}
+50% {
+transform: scale(1.15);
+}
+}
+
+/* Для телефонів */
+@media (max-width: 650px) {
+.banner {
+width: 90%;
+min-height: 350px;
+}
+
+h1 {
+font-size: 36px;
+}
+
+.decoration {
+width: 55px;
+height: 55px;
+}
+}
